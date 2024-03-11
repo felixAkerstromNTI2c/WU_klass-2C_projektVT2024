@@ -1,27 +1,26 @@
 *{
     margin: 0px;
     padding: 0px;
+    --burger_line_width:30px;
+    --burger_line_height:5px;
+    --burger_line_margin:6px;
+    --background_color: rgb(109, 40, 40);
     
 }
-#grid_wrapper_top{
+#grid_wrapper_menu{
     width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px 400px;
-    grid-template-areas: 
-    "titl"
-    "imag";
-
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#grid_wrapper_menu{
+    display: none;
 }
 #title{
-    grid-area: titl;
     background: blue;
 }
-#image{
-    grid-area: imag;
-    background: red;
-}
-
 
 #grid_wrapper_index{
     display: grid;
@@ -36,8 +35,8 @@
 }
 
 article{
-    margin: 15px;
-    border-radius: 20px;
+    margin: 7px;
+    border-radius: 0px;
 }
 #art_index_1{
     grid-area: art1;
@@ -74,19 +73,22 @@ article{
 
 #grid_wrapper_products{
     display: grid;
+    
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 400px 300px 300px 300px;
+    grid-template-rows: 400px 300px 300px 300px 300px;
     grid-template-areas:
         "art1 art1"
         "art2 art3"
         "art4 art5"
         "art6 art7"
+        "art8 art9"
+      
     ;
 }
 
 article{
-    margin: 15px;
-    border-radius: 20px;
+    margin: 7px;
+    border-radius: 0px;
 }
 #art_prod_1{
     grid-area: art1;
@@ -120,16 +122,72 @@ article{
     grid-area: art8;
     background: green;
 }
+#art_prod_9{
+    grid-area: art9;
+    background: green;
+}
+#art_prod_10{
+    grid-area: art10;
+    background: green;
+}
+
+.burger_line{
+    width: var(--burger_line_width);
+    height: var(--burger_line_height);
+    margin:var(--burger_line_margin);
+    background: darkgoldenrod;
+    border-radius: 20%;
+}
+
+.links_visible{
+    transform: translateY(500px)
+}
+
+.burger_in_x_form #burger_line_2 {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.burger_in_x_form #burger_line_1 {
+    transform: translateY(calc(var(--burger_line_height) + var(--burger_line_margin))) rotate(45deg);
+    transition: all 0.5s;
+}
+
+.burger_in_x_form #burger_line_3 {
+    transform: translateY(calc((-1)*(var(--burger_line_height) + var(--burger_line_margin)))) rotate(-45deg);
+    transition: all 0.5s;
+}
+
+#burger{
+    margin-right: 84px;
+    cursor:pointer;
+}
 
 @media screen and (min-width: 800px){
 
+#grid_wrapper_menu{
+    width: 100vw;
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#burger{
+    display: none;
+}
+#link_list{
+    display: none;
+}
+
 #grid_wrapper_products{
 width: 100vw;
-grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 grid-template-rows: 300px 300px ;
 grid-template-areas:
-    "art1 art2 art3 art4"
-    "art5 art6 art7 art8"
+    "art1 art2 art3 art4 art5"
+    "art6 art7 art8 art9 art10"
     ;
 }
 
