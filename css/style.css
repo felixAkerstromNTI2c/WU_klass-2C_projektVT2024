@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&family=Pixelify+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand&family=Titillium+Web:wght@600&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -27,7 +28,12 @@
     display: none;
 }
 #title{
-    background: blue;
+    font-size: 2.5rem;
+    width: 150px;
+    height:50px;
+    border-radius: 0px 10px 10px 0px;
+    background: green;
+
 }
 
 #grid_wrapper_index{
@@ -48,6 +54,7 @@
 #title_2{
     grid-area: titl2;
 }
+
 article{
     margin: 7px;
     border-radius: 0px;
@@ -225,7 +232,7 @@ article{
     cursor:pointer;
 }
 #link_list{
-    background: green;
+    background: rgba(0, 128, 0, 0.55);
     display:flex;
     flex-direction: column;
     height: 400px;
@@ -245,22 +252,40 @@ article{
     letter-spacing: 0.1875rem;
     width: 200px;
     height: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 #link_list a:hover{
     background:rgb(0, 108, 0) ;
 }
+.list_menu{
+    width: 110px;
+    height: 35px;
+    background: green;
+    text-align:center;
+    align-self: center;
+    border-radius: 10px;
+}
+.list_menu:hover{
+    background: rgb(0, 95, 0);
+}
+.product_image{
+    height: 200px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+     margin-right: auto;
+}
+
 
 @media screen and (min-width: 800px){
 
 #grid_wrapper_menu{
     width: 100vw;
     display: flex;
-    height: 40px;
-    justify-content: space-between;
     align-items: center;
+    height: 50px;
+    justify-content: space-around;
+    list-style: none;
     
 }
 #grid_wrapper_menu_mobile{
@@ -271,6 +296,17 @@ article{
 }
 #link_list{
     display: none;
+}
+.list_menu_a{
+    text-decoration: none;
+    color: blanchedalmond;
+    
+}
+.list_menu_title{
+    color: red;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
 }
 
 #grid_wrapper_products{
@@ -308,32 +344,40 @@ grid-template-areas:
     ;
 }   
 #art_insp_1{
-    margin-right: 0px;
+    margin: 0px;
+    margin-bottom: 10px;
     grid-area: insp1;
     background: yellow;
 }
 #art_insp_2{
-    margin-left: 0px;
+    margin: 0px;
+    margin-bottom: 10px;
     grid-area: insp2;
     background: rgb(255, 0, 170);
 }
 #art_insp_3{
-    margin-right: 0px;
+    margin: 0px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     grid-area: insp3;
     background: yellow;
 }
 #art_insp_4{
-    margin-left: 0px;
+    margin: 0px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     grid-area: insp4;
     background: rgb(81, 255, 0);
 }
 #art_insp_5{
-    margin-right: 0px;
+    margin: 0px;
+    margin-top: 10px;
     grid-area: insp5;
     background: rgb(0, 255, 234);
 }
 #art_insp_6{
-    margin-left: 0px;
+    margin: 0px;
+    margin-top: 10px;
     grid-area: insp6;
     background: rgb(217, 0, 255);
 }
