@@ -7,8 +7,8 @@
     --burger_line_height:5px;
     --burger_line_margin:6px;
     --background_color: rgb(109, 40, 40);
-    --product_backgroud_color:rgb(200,200,200);
-    
+    --product_backgroud_color:rgb(220,220,220);
+
 }
 #grid_wrapper_menu_mobile{
     width: 100vw;
@@ -62,37 +62,47 @@ article{
 }
 #art_index_1{
     grid-area: art1;
-    background: green;
+    position: relative;
 }
 #art_index_2{
     grid-area: art2;
-    background: green;
+    position: relative;
 }
 #art_index_3{
     grid-area: art3;
-    background: green;
+    position: relative;
 }
 #art_index_4{
     grid-area: art4;
-    background: green;
+    position: relative;
+
 }
 #art_index_5{
     grid-area: art5;
-    background: green;
+    position: relative;
+
 }
 #art_index_6{
     grid-area: art6;
-    background: green;
+    position: relative;
 }
 #art_index_7{
     grid-area: art7;
-    background: green;
-}
-#art_index_8{
-    grid-area: art8;
-    background: green;
 }
 
+.index_image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.text_on_image{
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    color: blanchedalmond;
+
+
+}
 #grid_wrapper_products{
     display: grid;
     
@@ -154,6 +164,7 @@ article{
     grid-area: art10;
     background: var(--product_backgroud_color);
 }
+
 
 #grid_wrapper_inspiration{
     display: grid;
@@ -239,7 +250,8 @@ article{
 }
 
 .links_visible{
-    transform: translateY(500px)
+    transform: translateY(500px);
+    z-index: 1;
 }
 
 .burger_in_x_form #burger_line_2 {
