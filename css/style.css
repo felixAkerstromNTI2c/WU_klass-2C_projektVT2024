@@ -370,12 +370,12 @@ article{
 footer{
     grid-area: fot;
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 8fr 3fr 7fr;
     grid-template-rows: 250px 250px 25px;
     grid-template-areas:
-    "name cat"
-    "con ser"
-    "cop cop"
+    "name name cat"
+    "con log ser"
+    "cop cop cop"
 }
 #company_name{
     grid-area: name;
@@ -388,7 +388,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    
+    padding-left: 4vw;
 
 }
 #services{
@@ -398,6 +398,8 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding-left: 4vw;
+   
 
 }
 #contacts{
@@ -407,6 +409,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding-left: 4vw;
 
 }
 #copyright{
@@ -437,38 +440,30 @@ footer{
     margin-top: 20px;
 
 }
-
-
+#logos{
+    grid-area: log;
+    background: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
 #instagram{
     width: 50px;
     height: auto;
-    position: absolute;
-    left: 200px;
-    bottom: -1130px;
+    
 }
 #facebook{
     width: 50px;
     height: auto;
-    position: absolute;
-    left: 0px;
-    bottom: -1200px;
-    left: 270px;
 }
 #X{
     width: 50px;
     height: auto;
-    position: absolute;
-    left: 200px;
-    bottom: -1200px;
-
 }
 #youtube{
     width: 50px;
     height: auto;
-    position: absolute;
-    left: 270px;
-    bottom: -1130px;
-
 }
 /*#art_insp_4{
     margin-top: 0px;
@@ -697,45 +692,39 @@ grid-template-areas:
 footer{
     grid-area: fot;
     display: grid;
-    grid-template-columns: 3fr 2fr 2fr 3fr;
+    grid-template-columns: 5fr 4fr 4fr 3fr 2fr;
     grid-template-rows: 250px 25px;
     grid-template-areas:
-    "name cat ser con"
-    "cop cop cop cop"
-    
+    "name cat ser con log"
+    "cop cop cop cop cop"
     ;
+}
+/*#logos{
+    grid-area: log;
+    background: yellow;
+    
 }
 #instagram{
     width: 50px;
     height: auto;
-    position: relative;
-    left: 0px;
-    bottom: 0px;
     
 }
 #facebook{
     width: 50px;
     height: auto;
-    position: relative;
-    bottom: 0px;
-    left: 0px;
+   
 }
 #X{
     width: 50px;
     height: auto;
-    position: relative;
-    left: 0px;
-    bottom: 0px;
+   
 
 }
 #youtube{
     width: 50px;
     height: auto;
-    position: relative;
-    left: 0px;
-    bottom: 0px;
-
-}
+   
+}*/
 /*#company_name{
     grid-area: name;
     background: blue;
