@@ -3,6 +3,8 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
     --burger_line_width:30px;
     --burger_line_height:5px;
     --burger_line_margin:6px;
@@ -17,7 +19,7 @@
     background: red;
     justify-content: flex-end;
     align-items: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /*font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;*/
    /* display: flex;
     height: 40px;
     justify-content: space-between;
@@ -46,6 +48,7 @@
         "art2 art3"
         "art4 art5"
         "art6 art7"
+        "fot fot"
     ;
 }
 #title_1{
@@ -86,9 +89,9 @@ article{
     grid-area: art6;
     position: relative;
 }
-#art_index_7{
+/*#art_index_7{
     grid-area: art7;
-}
+}*/
 
 .index_image{
     height: 100%;
@@ -170,11 +173,12 @@ article{
     display: grid;
     overflow-x: hidden;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto ;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas:
     "insp1"
     "insp2"
     "insp3"
+    "fot"
     ;
 }
 #art_insp_1{
@@ -224,6 +228,39 @@ article{
     grid-area: text;
     padding: 50px;
     padding-top: 10px;
+}
+footer{
+    grid-area: fot;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 300px 300px 20px;
+    grid-template-areas:
+    "name cat"
+    "con ser"
+    "cop cop"
+}
+#company_name{
+    grid-area: name;
+    background: blue;
+}
+#categories{
+    grid-area: cat;
+    background: rgb(130, 238, 236);
+    list-style: none;
+}
+#services{
+    grid-area:ser;
+    background: red;
+    list-style: none;
+}
+#contacts{
+    grid-area: con;
+    background: pink;
+    list-style: none;
+}
+#copyright{
+    grid-area: cop;
+    background: teal;
 }
 /*#art_insp_4{
     margin-top: 0px;
@@ -355,8 +392,7 @@ article{
 .list_menu_title{
     color: red;
     text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    
 }
 
 #grid_wrapper_products{
@@ -375,22 +411,24 @@ grid-template-areas:
 
 #grid_wrapper_index{
     grid-template-columns: 2fr 1fr 1fr 2fr;
-    grid-template-rows: 600px 500px 400px;
+    grid-template-rows: 600px 500px 400px auto;
     grid-template-areas:
         "art1 art1 art1 art1"
         "art2 art2 art3 art3"
         "art4 art5 art5 art6"
+        "fot fot fot fot"
         
     ;
 }
 #grid_wrapper_inspiration{
     display: grid;   
     grid-template-columns: 1fr;
-    grid-template-rows: 400px 400px 400px;
+    grid-template-rows: 400px 400px 400px auto;
     grid-template-areas:
     "insp1 "
     "insp2"
     "insp3"
+    "fot"
     ;
 }   
 #art_insp_1{
@@ -445,6 +483,40 @@ grid-template-areas:
     grid-area: text;
     padding: 50px;
 }
+footer{
+    grid-area: fot;
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr 3fr;
+    grid-template-rows: 300px 20px;
+    grid-template-areas:
+    "name cat ser con"
+    "cop cop cop cop"
+    
+    ;
+}
+/*#company_name{
+    grid-area: name;
+    background: blue;
+}
+#categories{
+    grid-area: cat;
+    background: rgb(130, 238, 236);
+    list-style: none;
+}
+#services{
+    grid-area:ser;
+    background: red;
+    list-style: none;
+}
+#contacts{
+    grid-area: con;
+    background: pink;
+    list-style: none;
+}
+#copyright{
+    grid-area: cop;
+    background: teal;
+}*/
 /*.inspiration_heading{
     display: flex;
     align-items: flex-start;
