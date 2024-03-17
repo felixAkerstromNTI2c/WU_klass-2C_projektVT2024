@@ -110,7 +110,7 @@ article{
     display: grid;
     
     grid-template-columns: 1fr 1fr;
-    grid-template-rows:  50px 300px 300px 300px 300px 300px 50px;
+    grid-template-rows:  50px 350px 350px 350px 350px 350px 50px 350px 350px 350px 350px 350px auto;
     grid-template-areas:
         "titl1 titl1"
         "art1 art2"
@@ -119,6 +119,12 @@ article{
         "art7 art8"
         "art9 art10"
         "titl2 titl2"
+        "art11 art12"
+        "art13 art14"
+        "art15 art16"
+        "art17 art18"
+        "art19 art20"
+        "fot fot"
       
     ;
 }
@@ -129,45 +135,177 @@ article{
 }*/
 #art_prod_1{
     grid-area: art1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
     background: var(--product_backgroud_color);
 }
 #art_prod_2{
     grid-area: art2;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
     background: var(--product_backgroud_color);
 }
 #art_prod_3{
     grid-area: art3;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
     background: var(--product_backgroud_color);
 }
 #art_prod_4{
     grid-area: art4;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
     background: var(--product_backgroud_color);
 }
 #art_prod_5{
     grid-area: art5;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
     background: var(--product_backgroud_color);
 }
 #art_prod_6{
     grid-area: art6;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
     background: var(--product_backgroud_color);
 }
 #art_prod_7{
     grid-area: art7;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
     background: var(--product_backgroud_color);
 }
 #art_prod_8{
     grid-area: art8;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
     background: var(--product_backgroud_color);
 }
 #art_prod_9{
     grid-area: art9;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
     background: var(--product_backgroud_color);
 }
 #art_prod_10{
     grid-area: art10;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
     background: var(--product_backgroud_color);
 }
-
+#art_prod_11{
+    grid-area: art11;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background: var(--product_backgroud_color);
+}
+#art_prod_12{
+    grid-area: art12;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background: var(--product_backgroud_color);
+}
+#art_prod_13{
+    grid-area: art13;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background: var(--product_backgroud_color);
+}
+#art_prod_14{
+    grid-area: art14;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background: var(--product_backgroud_color);
+}
+#art_prod_15{
+    grid-area: art15;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background: var(--product_backgroud_color);
+}
+#art_prod_16{
+    grid-area: art16;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background: var(--product_backgroud_color);
+}
+#art_prod_17{
+    grid-area: art17;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background: var(--product_backgroud_color);
+}
+#art_prod_18{
+    grid-area: art18;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background: var(--product_backgroud_color);
+}
+#art_prod_19{
+    grid-area: art19;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background: var(--product_backgroud_color);
+}
+#art_prod_20{
+    grid-area: art20;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background: var(--product_backgroud_color);
+}
+.product_price{
+    height: 25px;
+    width: 130px;
+    background: green;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+}
+.product_price:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    background-color: rgb(0, 195, 0);
+}
 
 #grid_wrapper_inspiration{
     display: grid;
@@ -233,7 +371,7 @@ footer{
     grid-area: fot;
     display: grid;
     grid-template-columns: 3fr 2fr;
-    grid-template-rows: 300px 300px 20px;
+    grid-template-rows: 250px 250px 25px;
     grid-template-areas:
     "name cat"
     "con ser"
@@ -247,20 +385,90 @@ footer{
     grid-area: cat;
     background: rgb(130, 238, 236);
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+
 }
 #services{
     grid-area:ser;
     background: red;
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
 }
 #contacts{
     grid-area: con;
     background: pink;
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
 }
 #copyright{
     grid-area: cop;
     background: teal;
+}
+.footer_titles{
+    font-weight: 800;
+}
+.footer_text{
+    text-decoration: none;
+    color: rgb(90, 90, 90);
+}
+#company_name{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    align-items: center;
+
+}
+#footer_company_text{
+    font-size: 15px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+#footer_leaf_logo{
+    width: 100px;
+    margin-top: 20px;
+
+}
+
+
+#instagram{
+    width: 50px;
+    height: auto;
+    position: absolute;
+    left: 200px;
+    bottom: -1130px;
+}
+#facebook{
+    width: 50px;
+    height: auto;
+    position: absolute;
+    left: 0px;
+    bottom: -1200px;
+    left: 270px;
+}
+#X{
+    width: 50px;
+    height: auto;
+    position: absolute;
+    left: 200px;
+    bottom: -1200px;
+
+}
+#youtube{
+    width: 50px;
+    height: auto;
+    position: absolute;
+    left: 270px;
+    bottom: -1130px;
+
 }
 /*#art_insp_4{
     margin-top: 0px;
@@ -398,12 +606,15 @@ footer{
 #grid_wrapper_products{
 width: 100vw;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-grid-template-rows: 50px 300px 300px 50px;
+grid-template-rows: 50px 350px 350px 50px 350px 350px auto;
 grid-template-areas: 
     "titl1 titl1 titl1 titl1 titl1"
     "art1 art2 art3 art4 art5"
     "art6 art7 art8 art9 art10"
     "titl2 titl2 titl2 titl2 titl2"
+    "art11 art12 art13 art14 art15"
+    "art16 art17 art18 art19 art20"
+    "fot fot fot fot fot"
     ;
 }
 
@@ -487,12 +698,43 @@ footer{
     grid-area: fot;
     display: grid;
     grid-template-columns: 3fr 2fr 2fr 3fr;
-    grid-template-rows: 300px 20px;
+    grid-template-rows: 250px 25px;
     grid-template-areas:
     "name cat ser con"
     "cop cop cop cop"
     
     ;
+}
+#instagram{
+    width: 50px;
+    height: auto;
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    
+}
+#facebook{
+    width: 50px;
+    height: auto;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+}
+#X{
+    width: 50px;
+    height: auto;
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+
+}
+#youtube{
+    width: 50px;
+    height: auto;
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+
 }
 /*#company_name{
     grid-area: name;
