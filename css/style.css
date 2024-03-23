@@ -475,11 +475,56 @@ footer{
 #grid_wrapper_about_us{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 250px 250px 25px;
+    grid-template-rows: auto 500px auto 200px 200px auto;
     grid-template-areas:
-    
+    "tau"
+    "art_us_1"
+    "art_us_2"
+    "art_us_3"
+    "art_us_4"
+    "art_us_5"
+    "fot"
     ;
 
+}
+#title_about_us{
+    margin-left: 6%;
+    margin-right: 6%;
+    grid-area: tau;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#art_about_us_1{
+    margin-left: 6%;
+    margin-right: 6%;
+    grid-area: art_us_1;
+    object-fit: cover;
+}
+#art_about_us_2{
+    grid-area: art_us_2;
+    background-color: var(--product_backgroud_color);
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 15px;
+    text-align: center;
+}
+#art_about_us_3{
+    grid-area: art_us_3;
+    background-color: var(--footer_background_color)
+}
+#art_about_us_4{
+    grid-area: art_us_4;
+    background: var(--product_backgroud_color);
+}
+#art_about_us_5{
+    grid-area: art_us_5;
+}
+#plant_shop_img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    
 }
 /*#art_insp_4{
     margin-top: 0px;
@@ -726,12 +771,18 @@ footer{
 #grid_wrapper_about_us{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 250px 250px 25px;
+    grid-template-rows: 50px 500px auto 200px auto;
     grid-template-areas:
+    "tau tau tau"
+    "art_us_1 art_us_1 art_us_1"
+    "art_us_2 art_us_2 art_us_2"
+    "art_us_3 art_us_4 art_us_5"
+    "fot fot fot"
     
     ;
 
 }
+
 /*#logos{
     grid-area: log;
     background: yellow;
