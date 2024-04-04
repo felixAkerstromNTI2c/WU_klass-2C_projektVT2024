@@ -39,6 +39,14 @@
     height:50px;^
     border-radius: 0px 10px 10px 0px;*/
 }
+#title_leaf_logo{
+    height: 2.5rem;
+    width:auto;
+}
+#title_and_logo{
+    display: flex;
+    align-items: center;
+}
 
 .list_menu_title{
     color: red;
@@ -105,14 +113,34 @@ article{
     width: 100%;
     object-fit: cover;
 }
-.text_on_image{
+
+.text_on_image_top_left{
     position: absolute;
-    bottom: 15px;
+    top: 15px;
     left: 20px;
-    color: blanchedalmond;
+    color: white;
+    font-size:3.44rem;
+    font-weight: 800;
 
 
 }
+.text_on_image_bottom_left_white{
+    position:absolute;
+    bottom: 15px;
+    left: 20px;
+    color: white;
+    font-size:2.13rem;
+    font-weight: 800;
+}
+.text_on_image_bottom_left_black{
+    position:absolute;
+    bottom: 15px;
+    left: 20px;
+    color: black;
+    font-size:2.13rem;
+    font-weight: 800;
+}
+
 #grid_wrapper_products{
     display: grid;
     
@@ -143,6 +171,7 @@ article{
 #art_prod_1{
     grid-area: art1;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
@@ -151,6 +180,7 @@ article{
 #art_prod_2{
     grid-area: art2;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
@@ -159,6 +189,7 @@ article{
 #art_prod_3{
     grid-area: art3;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
@@ -167,6 +198,7 @@ article{
 #art_prod_4{
     grid-area: art4;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
@@ -175,6 +207,7 @@ article{
 #art_prod_5{
     grid-area: art5;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
@@ -183,6 +216,7 @@ article{
 #art_prod_6{
     grid-area: art6;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
@@ -191,6 +225,7 @@ article{
 #art_prod_7{
     grid-area: art7;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
@@ -199,6 +234,7 @@ article{
 #art_prod_8{
     grid-area: art8;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
@@ -207,6 +243,7 @@ article{
 #art_prod_9{
     grid-area: art9;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
@@ -215,6 +252,7 @@ article{
 #art_prod_10{
     grid-area: art10;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
@@ -223,6 +261,7 @@ article{
 #art_prod_11{
     grid-area: art11;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
@@ -231,6 +270,7 @@ article{
 #art_prod_12{
     grid-area: art12;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
@@ -239,6 +279,7 @@ article{
 #art_prod_13{
     grid-area: art13;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
@@ -247,6 +288,7 @@ article{
 #art_prod_14{
     grid-area: art14;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
@@ -255,6 +297,7 @@ article{
 #art_prod_15{
     grid-area: art15;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
@@ -263,6 +306,7 @@ article{
 #art_prod_16{
     grid-area: art16;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
@@ -271,6 +315,7 @@ article{
 #art_prod_17{
     grid-area: art17;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
@@ -279,6 +324,7 @@ article{
 #art_prod_18{
     grid-area: art18;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
@@ -287,6 +333,7 @@ article{
 #art_prod_19{
     grid-area: art19;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
@@ -295,6 +342,7 @@ article{
 #art_prod_20{
     grid-area: art20;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
@@ -437,6 +485,7 @@ footer{
     font-size: 15px;
     margin-left: 5vw;
     margin-right: 5vw;
+    text-align: center;
 }
 #footer_leaf_logo{
     width: 100px;
@@ -738,6 +787,15 @@ footer{
     height:50px;^
     border-radius: 0px 10px 10px 0px;*/
 }
+.text_on_image_top_left{
+    font-size:5.56rem;
+}
+.text_on_image_bottom_left_white{
+    font-size:3.44rem;
+}
+.text_on_image_bottom_left_black{
+    font-size:3.44rem;
+}
 #grid_wrapper_menu_mobile{
     display: none;
 }
@@ -873,7 +931,6 @@ footer{
     "map map map"
     "map_txt map_txt map_txt"
     "fot fot fot"
-    
     ;
 
 }
