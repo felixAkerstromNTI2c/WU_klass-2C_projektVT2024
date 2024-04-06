@@ -5,8 +5,8 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    --burger_line_width:30px;
-    --burger_line_height:5px;
+    --burger_line_width:35px;
+    --burger_line_height:7px;
     --burger_line_margin:6px;
     --background_color: rgb(109, 40, 40);
     --product_backgroud_color:rgb(225,225,225);
@@ -16,28 +16,20 @@
 #grid_wrapper_menu_mobile{
     width: 100vw;
     display: flex;
-    height: 50px;
+    height: 60px;
     background: green;
     justify-content: flex-end;
     align-items: center;
-    /*font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;*/
-   /* display: flex;
-    height: 40px;
-    justify-content: space-between;
-    align-items: center;*/
-    
 }
 
 #grid_wrapper_menu{
     display: none;
 }
 .title{
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     margin-left: 30px;
     margin-right: auto;
-    /*width: 150px;
-    height:50px;^
-    border-radius: 0px 10px 10px 0px;*/
+
 }
 #title_leaf_logo{
     height: 2.5rem;
@@ -50,28 +42,34 @@
 
 .list_menu_title{
     color: red;
-    font-size: 2,5rem;
+    font-size: 2.5rem;
     text-decoration: none;
 }
 
 #grid_wrapper_index{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 400px 300px 300px 300px;
     grid-template-areas:
-        "art1 art1"
-        "art2 art3"
-        "art4 art5"
-        "art6 art7"
-        "fot fot"
+        "art1 art1 art1 art1"
+        "art2 art2 art3 art3"
+        "art4 art4 art5 art5"
+        "blank1 art6 art6 blank2"
+        "fot fot fot fot"
     ;
 }
 #title_1{
     grid-area: titl1;
+    font-size: 34px;
+    font-weight: 600;
+    padding-left: 20px;
 }
 
 #title_2{
     grid-area: titl2;
+    font-size: 34px;
+    font-weight: 600;
+    padding-left: 20px;
 }
 
 article{
@@ -81,32 +79,41 @@ article{
 #art_index_1{
     grid-area: art1;
     position: relative;
+    line-height: 1.2;
 }
 #art_index_2{
     grid-area: art2;
     position: relative;
+    line-height: 1.2;
 }
 #art_index_3{
     grid-area: art3;
     position: relative;
+    line-height: 1.2;
 }
 #art_index_4{
     grid-area: art4;
     position: relative;
+    line-height: 1.2;
 
 }
 #art_index_5{
     grid-area: art5;
     position: relative;
+    line-height: 1.2;
 
 }
 #art_index_6{
     grid-area: art6;
     position: relative;
+    line-height: 1.2;
 }
-/*#art_index_7{
-    grid-area: art7;
-}*/
+#blank_space_1{
+    grid-area: blank1;
+}
+#blank_space_2{
+    grid-area: blank2;
+}
 
 .index_image{
     height: 100%;
@@ -117,10 +124,11 @@ article{
 .text_on_image_top_left{
     position: absolute;
     top: 15px;
-    left: 20px;
+    left: auto;
     color: white;
-    font-size:3.44rem;
+    font-size:2.75rem;
     font-weight: 800;
+    padding-left: 15px;
 
 
 }
@@ -129,7 +137,7 @@ article{
     bottom: 15px;
     left: 20px;
     color: white;
-    font-size:2.13rem;
+    font-size:1.7rem;
     font-weight: 800;
 }
 .text_on_image_bottom_left_black{
@@ -137,7 +145,7 @@ article{
     bottom: 15px;
     left: 20px;
     color: black;
-    font-size:2.13rem;
+    font-size:1.7rem;
     font-weight: 800;
 }
 
@@ -164,10 +172,14 @@ article{
     ;
 }
 
-/*article{
-    margin: 7px;
-    border-radius: 0px;
-}*/
+.product_name{
+    font-size: 21px;
+    font-weight: 600;
+}
+.product_description{
+    font-size: 17px;
+    font-weight: 400;
+}
 #art_prod_1{
     grid-area: art1;
     display: flex;
@@ -355,6 +367,7 @@ article{
     display: flex;
     justify-content: center;
     border-radius: 12px;
+    color: white;
 }
 .product_price:hover{
     cursor: pointer;
@@ -375,16 +388,7 @@ article{
     ;
 }
 #art_insp_1{
-    /*display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 400px 70px 100px;
-    grid-template-areas:
-    "img"
-    "heading"
-    "text";
-
-    margin: 0px;
-    margin-bottom: 10px;*/
+    margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
     grid-area: insp1;
@@ -394,7 +398,7 @@ article{
 #art_insp_2{
     margin-left: 0px;
     margin-right: 0px;
-    margin-top: 0px;
+    margin-top: 10px;
     grid-area: insp2;
     background: var(--product_backgroud_color);
 }
@@ -406,8 +410,6 @@ article{
     background: var(--product_backgroud_color);
 }
 .inspiration_image{
-    grid-area: img;
-    margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -416,11 +418,19 @@ article{
     display: flex;
     justify-content: center;
     margin-top: 25px;
+    font-size: 34px;
+    font-weight: 600;
+    text-align: center;
 }
 .inspiration_text{
     grid-area: text;
     padding: 50px;
     padding-top: 10px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 17px;
+    font-weight: 500;
+    
 }
 footer{
     grid-area: fot;
@@ -432,6 +442,8 @@ footer{
     "name name cat"
     "con log ser"
     "cop cop cop"
+    ;
+    margin-top: 20px;
 }
 #company_name{
     grid-area: name;
@@ -504,20 +516,20 @@ footer{
     width: auto;
 }
 #instagram{
-    width: 50px;
+    width: 45px;
     height: auto;
     
 }
 #facebook{
-    width: 50px;
+    width: 45px;
     height: auto;
 }
 #X{
-    width: 50px;
+    width: 45px;
     height: auto;
 }
 #youtube{
-    width: 50px;
+    width: 45px;
     height: auto;
 }
 
@@ -551,6 +563,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    text-align: center;
 }
 #art_about_us_1{
     margin-left: 6%;
@@ -570,56 +583,80 @@ footer{
     grid-area: art_us_3;
     padding: 20px;
     display: flex; 
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 6%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background: var(--footer_background_color);
 }
 #art_about_us_4{
     grid-area: art_us_4;
     padding: 20px;
     display: flex; 
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 6%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background: var(--footer_background_color);
     
 }
 #art_about_us_5{
     grid-area: art_us_5;
     padding: 20px;
+    margin-left: 6%;
+    margin-right: 6%;
     display: flex; 
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background: var(--footer_background_color);
 }
 #art_about_us_6{
     grid-area: art_us_6;
     padding: 20px;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 6%;
     display: flex; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background: var(--footer_background_color);
 }
 #art_about_us_7{
     grid-area: art_us_7;
     padding: 20px;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 6%;
     display: flex; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background: var(--footer_background_color);
 }
 #art_about_us_8{
     grid-area: art_us_8;
     padding: 20px;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 6%;
     display: flex; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background: var(--footer_background_color);
 }
 #category_title{
     grid-area: cat_titl;
@@ -643,6 +680,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 2.2rem;
 
 }
 #shop_map{
@@ -660,83 +698,61 @@ footer{
     margin-right: auto;
     margin-left: auto;
     padding: 30px;
-    margin-bottom: 56px;
+    margin-bottom: 15px;
+    text-align: center;
+    margin-top: 15px;
+}
+.our_perks_text{
+    font-weight: 400;
+}
 
-
-}
-/*#art_insp_4{
-    margin-top: 0px;
-    grid-area: insp4;
-    background: rgb(81, 255, 0);
-}
-#art_insp_5{
-    margin-bottom: 0px;
-    grid-area: insp5;
-    background: rgb(0, 255, 234);
-}
-#art_insp_6{
-    margin-top: 0px;
-    grid-area: insp6;
-    background: rgb(217, 0, 255);
-}
-*/
 .burger_line{
     width: var(--burger_line_width);
     height: var(--burger_line_height);
     margin:var(--burger_line_margin);
-    background: darkgoldenrod;
-    border-radius: 20%;
+    background: red;
+    border-radius: 5px;
 }
-
 .links_visible{
     transform: translateY(500px);
     z-index: 1;
 }
-
 .burger_in_x_form #burger_line_2 {
     opacity: 0;
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
-
 .burger_in_x_form #burger_line_1 {
     transform: translateY(calc(var(--burger_line_height) + var(--burger_line_margin))) rotate(45deg);
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
-
 .burger_in_x_form #burger_line_3 {
     transform: translateY(calc((-1)*(var(--burger_line_height) + var(--burger_line_margin)))) rotate(-45deg);
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
-
 #burger{
-    margin-right: 84px;
-    cursor:pointer;
+    margin-right: 15px;
 }
 #link_list{
     background: rgba(0, 128, 0, 0.55);
     display:flex;
     flex-direction: column;
-    height: 400px;
+    height: 310px;
     width: 200px;
     position: absolute;
     top: -400px;
     align-items: center;
     justify-content: space-around;
     list-style: none;
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
 #link_list a{
     text-decoration: none;
     color:blanchedalmond;
     font-weight: bold;
-    font-size: 1.25rem;
-    letter-spacing: 0.1875rem;
+    font-size: 1rem;
+    letter-spacing: 0.18rem;
     width: 200px;
     height: 3rem;
-
-}
-#link_list a:hover{
-    background:rgb(0, 108, 0) ;
 }
 .list_menu{
     width: 110px;
@@ -748,9 +764,6 @@ footer{
     align-self: center;
     border-radius: 10px;
 }
-/*.list_menu:hover{
-    background: rgb(0, 95, 0);
-}*/
 .product_image{
     height: 200px;
     width: auto;
@@ -763,8 +776,6 @@ footer{
     display: flex;
     justify-content: left;
     align-items: center;
-    
-    
 }
 
 
@@ -845,7 +856,7 @@ grid-template-areas:
 #grid_wrapper_inspiration{
     display: grid;   
     grid-template-columns: 1fr;
-    grid-template-rows: 400px 400px 400px auto;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas:
     "insp1 "
     "insp2"
@@ -862,6 +873,7 @@ grid-template-areas:
     "img text";
 
     margin: 0px;
+    margin-top: 10px;
     margin-bottom: 10px;
     grid-area: insp1;
     background: var(--product_backgroud_color);
@@ -888,6 +900,7 @@ grid-template-areas:
     "img heading"
     "img text";
     margin: 0px;
+    margin-bottom: 10px;
     grid-area: insp3;
 }
 .inspiration_image{
@@ -898,12 +911,18 @@ grid-template-areas:
 .inspiration_heading{
     grid-area: heading;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     margin-top: 25px;
 }
 .inspiration_text{
     grid-area: text;
     padding: 50px;
+    padding-left: 5px;
+    margin-right: auto;
+    padding-right: 100px;
+    text-align: left;
+    line-height: 1.8;
+
 }
 footer{
     grid-area: fot;
@@ -932,96 +951,11 @@ footer{
     "map_txt map_txt map_txt"
     "fot fot fot"
     ;
-
+}
+#art_about_us_5{
+    margin-bottom: 6%;
 }
 
-/*#logos{
-    grid-area: log;
-    background: yellow;
-    
-}
-#instagram{
-    width: 50px;
-    height: auto;
-    
-}
-#facebook{
-    width: 50px;
-    height: auto;
-   
-}
-#X{
-    width: 50px;
-    height: auto;
-   
-
-}
-#youtube{
-    width: 50px;
-    height: auto;
-   
-}*/
-/*#company_name{
-    grid-area: name;
-    background: blue;
-}
-#categories{
-    grid-area: cat;
-    background: rgb(130, 238, 236);
-    list-style: none;
-}
-#services{
-    grid-area:ser;
-    background: red;
-    list-style: none;
-}
-#contacts{
-    grid-area: con;
-    background: pink;
-    list-style: none;
-}
-#copyright{
-    grid-area: cop;
-    background: teal;
-}*/
-/*.inspiration_heading{
-    display: flex;
-    align-items: flex-start;
-    width: 1000px;
-    height: 100px;
-    margin: 50px;
-    margin-left: 100px;
-    margin-right: 0px;
-    background: red;
-}
-.inspiration_text{
-    width: 600px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-
-}
-*/
-/*#art_insp_4{
-    margin: 0px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    grid-area: insp4;
-    background: rgb(81, 255, 0);
-}
-#art_insp_5{
-    margin: 0px;
-    margin-top: 10px;
-    grid-area: insp5;
-    background: rgb(0, 255, 234);
-}
-#art_insp_6{
-    margin: 0px;
-    margin-top: 10px;
-    grid-area: insp6;
-    background: rgb(217, 0, 255);
-}*/
 .no_hover:hover{
     transform:scale(1);
 }
