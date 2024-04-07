@@ -14,7 +14,7 @@
 
 }
 #grid_wrapper_menu_mobile{
-    width: 100vw;
+    width: 100%;
     display: flex;
     height: 60px;
     background: green;
@@ -35,7 +35,15 @@
     height: 2.5rem;
     width:auto;
 }
+#title_leaf_logo_mobile{
+    height: 2.5rem;
+    width:auto;
+}
 #title_and_logo{
+    display: flex;
+    align-items: center;
+}
+#title_and_logo_mobile{
     display: flex;
     align-items: center;
 }
@@ -74,7 +82,6 @@
 
 article{
     margin: 7px;
-    border-radius: 0px;
 }
 #art_index_1{
     grid-area: art1;
@@ -107,12 +114,6 @@ article{
     grid-area: art6;
     position: relative;
     line-height: 1.2;
-}
-#blank_space_1{
-    grid-area: blank1;
-}
-#blank_space_2{
-    grid-area: blank2;
 }
 
 .index_image{
@@ -733,13 +734,14 @@ footer{
     margin-right: 15px;
 }
 #link_list{
-    background: rgba(0, 128, 0, 0.55);
+    background: rgba(0, 128, 0, 0.7);
     display:flex;
     flex-direction: column;
     height: 310px;
     width: 200px;
     position: absolute;
     top: -400px;
+    right: 0px;
     align-items: center;
     justify-content: space-around;
     list-style: none;
@@ -747,7 +749,7 @@ footer{
 }
 #link_list a{
     text-decoration: none;
-    color:blanchedalmond;
+    color:white;
     font-weight: bold;
     font-size: 1rem;
     letter-spacing: 0.18rem;
@@ -785,18 +787,14 @@ footer{
     width: 100%;
     display: flex;
     align-items: center;
-    height: 50px;
+    height: 60px;
     justify-content: space-around;
     list-style: none;
     background:green;
-    
 }
 .title{
     margin-left: 0px;
     margin-right: 0px;
-    /*width: 150px;
-    height:50px;^
-    border-radius: 0px 10px 10px 0px;*/
 }
 .text_on_image_top_left{
     font-size:5.56rem;
@@ -818,15 +816,15 @@ footer{
 }
 .list_menu_a{
     text-decoration: none;
-    color: blanchedalmond;
+    color: white;
     font-size: 1.2rem;
 }
 .list_menu_a:hover{
-    color: rgb(193, 176, 151);
+    color: rgb(176, 176, 176);
 }
 
 #grid_wrapper_products{
-width: 100vw;
+width: 100%;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 grid-template-rows: 50px 350px 350px 50px 350px 350px auto;
 grid-template-areas: 
@@ -843,6 +841,8 @@ grid-template-areas:
 
 
 #grid_wrapper_index{
+    width: 100%;
+    overflow-x: hidden;
     grid-template-columns: 2fr 1fr 1fr 2fr;
     grid-template-rows: 600px 500px 400px auto;
     grid-template-areas:
@@ -911,7 +911,7 @@ grid-template-areas:
 .inspiration_heading{
     grid-area: heading;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     margin-top: 25px;
 }
 .inspiration_text{
